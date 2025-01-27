@@ -1,0 +1,19 @@
+{
+  "name": "lookers",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 8080"
+  },
+  "devDependencies": {
+    "sass": "^1.83.4",
+    "vite": "^6.0.11"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7",
+    "normalize.css": "^8.0.1"
+  }
+}

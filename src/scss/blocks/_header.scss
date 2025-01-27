@@ -1,0 +1,195 @@
+.header{
+	position: relative;
+	z-index: 1100; /* Початковий рівень */
+    transition: z-index 0.3s;
+}
+.header__container{
+	width: 100%;
+	
+	margin: 20px auto;
+	max-width: 1430px;    
+    z-index: 5;
+    // border: 1px solid var(--black);
+}
+.grid-background{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    z-index: 8;
+    pointer-events: none;
+}
+
+.grid-background::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--line) 1px, transparent 1px);
+    background-size: calc(100% / 3) 100%; 
+    z-index: 8;
+}
+
+.header__nav {
+	position: relative;
+	width: 100%;
+	padding-left: 42px;
+	z-index: 4;
+	color: var(--text-color);
+	letter-spacing: normal;
+    background-color: var(--bg-color);
+    border: 1px solid var(--nav-border);
+}
+    
+    .header-row {
+    position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 4;
+}
+
+
+
+
+.headerbtn{
+    position: relative;
+	display: flex;
+	align-items: center;
+	padding: 16px 38px;
+	border-left: 1px solid var(--line);
+text-align: center;
+letter-spacing: -0.01em;
+color: var(--header-text);
+transition: all 250ms ease-in-out;
+cursor: pointer;
+}
+
+
+/* Стилі для куточків */
+.headerbtn .corner-tl,
+.headerbtn .corner-tr,
+.headerbtn .corner-bl,
+.headerbtn .corner-br {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+/* Псевдоелементи для ліній */
+.headerbtn .corner-tl::before,
+.headerbtn .corner-tl::after,
+.headerbtn .corner-tr::before,
+.headerbtn .corner-tr::after,
+.headerbtn .corner-bl::before,
+.headerbtn .corner-bl::after,
+.headerbtn .corner-br::before,
+.headerbtn .corner-br::after {
+    content: '';
+    position: absolute;
+    background-color: #ff0000; /* Колір ліній */
+    transition: all 0.3s ease-in-out;
+    opacity: 0; /* Невидимі на початку */
+}
+
+/* Верхній лівий кут */
+.headerbtn .corner-tl {
+    top: 3px;
+    left: 3px;
+}
+
+.headerbtn .corner-tl::before {
+    width: 12px;
+    height: 1px;
+    top: 3px;
+    left: 3px;
+}
+
+.headerbtn .corner-tl::after {
+    width: 1px;
+    height: 12px;
+    top: 3px;
+    left: 3px;
+}
+
+/* Верхній правий кут */
+.headerbtn .corner-tr {
+    top: 3px;
+    right: 3px;
+}
+
+.headerbtn .corner-tr::before {
+    width: 12px;
+    height: 1px;
+    top: 3px;
+    right: 3px;
+}
+
+.headerbtn .corner-tr::after {
+    width: 1px;
+    height: 12px;
+    top: 3px;
+    right: 3px;
+}
+
+/* Нижній лівий кут */
+.headerbtn .corner-bl {
+    bottom: 3px;
+    left: 3px;
+}
+
+.headerbtn .corner-bl::before {
+    width: 12px;
+    height: 1px;
+    bottom: 3px;
+    left: 3px;
+}
+
+.headerbtn .corner-bl::after {
+    width: 1px;
+    height: 12px;
+    bottom: 3px;
+    left: 3px;
+}
+
+/* Нижній правий кут */
+.headerbtn .corner-br {
+    bottom: 3px;
+    right: 3px;
+}
+
+.headerbtn .corner-br::before {
+    width: 12px;
+    height: 1px;
+    bottom: 3px;
+    right: 3px;
+}
+
+.headerbtn .corner-br::after {
+    width: 1px;
+    height: 12px;
+    bottom: 3px;
+    right: 3px;
+}
+
+/* Відображення ліній при ховері */
+.headerbtn:hover .corner-tl::before,
+.headerbtn:hover .corner-tl::after,
+.headerbtn:hover .corner-tr::before,
+.headerbtn:hover .corner-tr::after,
+.headerbtn:hover .corner-bl::before,
+.headerbtn:hover .corner-bl::after,
+.headerbtn:hover .corner-br::before,
+.headerbtn:hover .corner-br::after {
+    opacity: 1;
+}
+
+.header__plus{
+	margin-left: 4px;
+	font-size: 14px;
+}

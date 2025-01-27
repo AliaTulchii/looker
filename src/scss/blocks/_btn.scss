@@ -1,0 +1,124 @@
+.dark-mode__btn{
+    position: relative;
+    padding: 10px 18px;
+    color: var(--header-text);
+}
+
+
+/* Стилі для куточків */
+.dark-mode__btn .corner-tl,
+.dark-mode__btn .corner-tr,
+.dark-mode__btn .corner-bl,
+.dark-mode__btn .corner-br {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+/* Псевдоелементи для ліній */
+.dark-mode__btn .corner-tl::before,
+.dark-mode__btn .corner-tl::after,
+.dark-mode__btn .corner-tr::before,
+.dark-mode__btn .corner-tr::after,
+.dark-mode__btn .corner-bl::before,
+.dark-mode__btn .corner-bl::after,
+.dark-mode__btn .corner-br::before,
+.dark-mode__btn .corner-br::after {
+    content: '';
+    position: absolute;
+    background-color: #ff0000; /* Колір ліній */
+    transition: all 0.3s ease-in-out;
+    opacity: 0; /* Невидимі на початку */
+}
+
+/* Верхній лівий кут */
+.dark-mode__btn .corner-tl {
+    top: 3px;
+    left: 3px;
+}
+
+.dark-mode__btn .corner-tl::before {
+    width: 12px;
+    height: 1px;
+    top: 3px;
+    left: 3px;
+}
+
+.dark-mode__btn .corner-tl::after {
+    width: 1px;
+    height: 12px;
+    top: 3px;
+    left: 3px;
+}
+
+/* Верхній правий кут */
+.dark-mode__btn .corner-tr {
+    top: 3px;
+    right: 3px;
+}
+
+.dark-mode__btn .corner-tr::before {
+    width: 12px;
+    height: 1px;
+    top: 3px;
+    right: 3px;
+}
+
+.dark-mode__btn .corner-tr::after {
+    width: 1px;
+    height: 12px;
+    top: 3px;
+    right: 3px;
+}
+
+/* Нижній лівий кут */
+.dark-mode__btn .corner-bl {
+    bottom: 3px;
+    left: 3px;
+}
+
+.dark-mode__btn .corner-bl::before {
+    width: 12px;
+    height: 1px;
+    bottom: 3px;
+    left: 3px;
+}
+
+.dark-mode__btn .corner-bl::after {
+    width: 1px;
+    height: 12px;
+    bottom: 3px;
+    left: 3px;
+}
+
+/* Нижній правий кут */
+.dark-mode__btn .corner-br {
+    bottom: 3px;
+    right: 3px;
+}
+
+.dark-mode__btn .corner-br::before {
+    width: 12px;
+    height: 1px;
+    bottom: 3px;
+    right: 3px;
+}
+
+.dark-mode__btn .corner-br::after {
+    width: 1px;
+    height: 12px;
+    bottom: 3px;
+    right: 3px;
+}
+
+/* Відображення ліній при ховері */
+.dark-mode__btn:hover .corner-tl::before,
+.dark-mode__btn:hover .corner-tl::after,
+.dark-mode__btn:hover .corner-tr::before,
+.dark-mode__btn:hover .corner-tr::after,
+.dark-mode__btn:hover .corner-bl::before,
+.dark-mode__btn:hover .corner-bl::after,
+.dark-mode__btn:hover .corner-br::before,
+.dark-mode__btn:hover .corner-br::after {
+    opacity: 1;
+}

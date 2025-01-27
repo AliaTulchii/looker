@@ -1,0 +1,13 @@
+.nav-text{
+    display: block;
+    font-family: var(--font-main);
+font-weight: 400;
+font-size: 12px;
+text-transform: uppercase;
+
+&--close{
+    display: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+}

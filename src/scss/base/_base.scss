@@ -1,0 +1,54 @@
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+html {
+	scroll-behavior: smooth;
+	background-color: var(--bg-color);
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	text-wrap: balance;
+
+	&.overlay-active{
+        
+    overflow: hidden;
+	background-color: var(--accent);
+	color: var(--text-color);
+
+	&.header_nav, .menu__list{
+	background-color: var(--bg-color);
+	}
+	}
+}
+
+
+
+/* Ефект розмиття для основного контенту */
+body.overlay-active .content {
+    filter: blur(8px);
+    transition: filter 0.3s ease-in-out;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--link-color);
+}
+
+code {
+	background-color: #e9f1f6;
+	padding: 0.2rem;
+	border-radius: 4px;
+}
+
+pre.code {
+	overflow-x: auto;
+	background-color: #e9f1f6;
+	padding: 1rem;
+	border-radius: 4px;
+}

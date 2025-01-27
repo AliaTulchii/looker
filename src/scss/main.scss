@@ -1,0 +1,26 @@
+
+/* Base */
+@use '../scss/base/reset';
+@use '../scss/base/vars';
+@use '../scss/base/base';
+@use '../scss/base/utils'; // Тест на ошибку
+@use '../scss/base/containers';
+@use '../scss/base/sticky-footer';
+
+/* Blocks */
+@use '../scss/blocks/btn';
+@use '../scss/blocks/header';
+@use '../scss/blocks/home';
+@use '../scss/blocks/logo';
+@use '../scss/blocks/mobile-nav';
+@use '../scss/blocks/nav';
+@use '../scss/blocks/titles';
+
+
+
+
+
+
+
+/* No styles code below. Only in modules */
+/* Не пишите CSS код ниже. Только в подключаемых файлах */

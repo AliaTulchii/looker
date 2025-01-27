@@ -1,0 +1,266 @@
+.home__container{
+    position: relative;
+    width: 100%;
+    height: 820px;
+    margin-top: 10px;
+    border: 1px solid var(--nav-border);
+}
+
+
+.home__container::before,
+.home__container::after,
+.home__container .corner-top-left,
+.home__container .corner-top-right,
+.home__container .corner-bottom-left,
+.home__container .corner-bottom-right {
+    content: "";
+    position: absolute;
+    background-color: transparent; 
+}
+
+
+.home__container .corner-top-left {
+    top: -0.8px; 
+    left: -1px;
+    width: 33px;
+    height: 33px;
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+}
+
+
+.home__container .corner-top-right {
+    top: -0.8px;
+    right: -0.8px;
+    width: 33px;
+    height: 33px;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+}
+
+
+.home__container .corner-bottom-left {
+    bottom: -1px;
+    left: -1px;
+    width: 33px;
+    height: 33px;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+}
+
+
+.home__container .corner-bottom-right {
+    bottom: -1px;
+    right: -0.8px;
+    width: 33px;
+    height: 33px;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+}
+
+
+.home-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.upline, .middleline, .downline{
+    display: flex;
+}
+
+.upline__item{
+    width: 476px;
+    height: 210px;
+    border-bottom: 1px solid var(--line);
+}
+
+.upline__item--middle, .middleline__item--middle,  .downline__item--middle{
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+}
+
+
+
+.middleline__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 476px;
+    height: 400px;
+}
+
+.middleline__img{
+    width: 437px;
+    height: 354px;
+    opacity: 0.6;
+}
+
+.middleline__img--middle{
+    opacity: 1;
+}
+
+
+
+.downline__item{
+    width: 476px;
+    height: 210px;
+    border-top: 1px solid var(--line);
+}
+
+
+.home__content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__text{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 136%;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+text-align: center;
+color: var(--text-color);
+}
+
+.home__downpart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__listswrapper{
+    position: relative;
+    width: 948px;
+    margin-bottom: 16px;
+    z-index: 8;
+}
+
+.home__list{
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    gap: 8px;
+    z-index: 10;
+}
+
+.home__list:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.home__list--right{
+    margin-left: 150px;
+}
+
+.home__item{
+    font-family: var(--font-main);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.53;
+text-transform: uppercase;
+color: var(--home-text);
+cursor: pointer;
+}
+
+
+
+.home__item:hover{
+   color: var(--white);
+}
+
+
+.images-container {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border: 1px solid #ddd;
+    z-index: 1000;
+  }
+  
+  .images-container img {
+    max-width: 100px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .images-container img:hover {
+    transform: scale(1.1);
+  }
+
+.home__item--uppercase{
+    font-size: 40px;
+line-height: 1.02;
+}
+
+.home__titlewrapper{
+    height: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.home__title{
+    font-family: var(--font-family);
+font-weight: 900;
+font-size: 240px;
+line-height: 117%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: var(--home-text);
+}
+
+.title__figure {
+    position: relative;
+    width: 300px;
+    height: 235px;
+    display: flex;
+    align-items: center;
+}
+
+/* .video{
+    width: 309px;
+    height: 244px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+} */
+
+
+
+
+// .title__img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     // background-image: url(../../img/home/title.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     z-index: 5;
+// }
+
+/* Перше коло */
+.title__img--circleone {
+    clip-path: circle(55px at 60px 120px);
+}
+
+/* Друге коло */
+ .title__img--circletwo {
+    clip-path: circle(100px at 190px 125px);
+} 
+
+
