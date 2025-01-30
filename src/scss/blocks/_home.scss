@@ -77,7 +77,7 @@
     border-bottom: 1px solid var(--line);
 }
 
-.upline__item--middle, .middleline__item--middle,  .downline__item--middle{
+.upline__item--middle, .middleline__item-middle,  .downline__item--middle{
     border-left: 1px solid var(--line);
     border-right: 1px solid var(--line);
 }
@@ -86,20 +86,122 @@
 
 .middleline__item{
     display: flex;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     width: 476px;
     height: 400px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 0%; 
+    background-position: center;
+    transition: background-size 0.5s ease-in-out;
 }
 
-.middleline__img{
-    width: 437px;
-    height: 354px;
-    opacity: 0.6;
+
+
+
+.middleline__item-left--bright {
+    background-image: url(/assets/img/home/Brightspace.png);
+    background-size: 90% 90%;
+    opacity: 0.3;
 }
 
-.middleline__img--middle{
-    opacity: 1;
+.middleline__item-middle--bright {
+    background-image: url(/assets/img/home/Brightspace1.jpg);
+    background-size: 90% 90%;
+}
+
+.middleline__item-right--bright {
+    background-image: url(/assets/img/home/Brightspace2.png);
+    background-size: 90% 90%;
+    opacity: 0.3;
+}
+
+.middleline__item-left--arch {
+    background-image: url(/assets/img/home/archshots.png);
+    background-size: 90% 90%;
+    opacity: 0.3;
+}
+
+.middleline__item-middle--arch {
+    background-image: url(/assets/img/home/archshots1.png);
+    background-size: 90% 90%;
+}
+
+.middleline__item-right--arch {
+    background-image: url(/assets/img/home/archshots2.png);
+    background-size: 90% 90%;
+    opacity: 0.3;
+}
+
+.middleline__item-left--drone {
+    background-image: url(/assets/img/home/DroneVista.png);
+    background-size: 90% 90%;
+    opacity: 0.3;
+}
+
+.middleline__item-middle--drone {
+    background-image: url(/assets/img/home/DroneVista1.png);
+    background-size: 90% 90%;
+}
+
+.middleline__item-right--drone {
+    background-image: url(/assets/img/home/DroneVista2.png);
+    background-size: 90% 90%;
+    opacity: 0.3;
+}
+
+.middleline__item-left--space {
+    background-image: url(/assets/img/home/SpaceLens.png);
+    background-size: 90% 90%;
+    opacity: 0.3;
+}
+
+.middleline__item-middle--space {
+    background-image: url(/assets/img/home/SpaceLens1.png);
+    background-size: 90% 90%;
+}
+
+.middleline__item-right--space {
+    background-image: url(/assets/img/home/SpaceLens2.png);
+    background-size: 90% 90%;
+    opacity: 0.3;
+}
+
+@keyframes splitBgAppear {
+    0% {
+        background-size: 90% 0%;
+    }
+    25% {
+        background-size: 90% 25%;
+    }
+    50% {
+        background-size: 90% 50%;
+    }
+    75% {
+        background-size: 90% 75%;
+    }
+    100% {
+        background-size: 90% 90%;
+    }
+}
+
+
+
+.middleline__item-left--bright,
+.middleline__item-middle--bright,
+.middleline__item-right--bright,
+.middleline__item-left--arch,
+.middleline__item-middle--arch,
+.middleline__item-right--arch,
+.middleline__item-left--drone,
+.middleline__item-middle--drone,
+.middleline__item-right--drone,
+.middleline__item-left--space,
+.middleline__item-middle--space,
+.middleline__item-right--space{
+    animation: splitBgAppear 0.5s ease-in-out forwards;
 }
 
 
@@ -174,10 +276,15 @@ cursor: pointer;
 
 
 
-.home__item:hover{
-   color: var(--white);
-}
+#bright:hover,
+#arch:hover,
+#drone:hover,
+#space:hover{
+    color: var(--white);
+ }
 
+
+ 
 
 .images-container {
     display: none;

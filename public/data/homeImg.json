@@ -1,0 +1,64 @@
+{
+    "images":[
+        {
+            "id": 1,
+            "alt": "archshots",
+            "src": "/assets/img/home/archshots.png"
+        },
+        {
+            "id": 2,
+            "alt": "archshots",
+            "src": "/assets/img/home/archshots1.png"
+        },
+        {
+            "id": 3,
+            "alt": "archshots",
+            "src": "/assets/img/home/archshots2.png"
+        },
+        {
+            "id": 4,
+            "alt": "brightspace",
+            "src": "/assets/img/home/Brightspace.png"
+        },
+        {
+            "id": 5,
+            "alt": "brightspace",
+            "src": "/assets/img/home/Brightspace1.jpg"
+        },
+        {
+            "id": 6,
+            "alt": "brightspace",
+            "src": "/assets/img/home/Brightspace2.png"
+        },
+        {
+            "id": 7,
+            "alt": "drone",
+            "src": "/assets/img/home/DroneVista.png"
+        },
+        {
+            "id": 8,
+            "alt": "drone",
+            "src": "/assets/img/home/DroneVista1.png"
+        },
+        {
+            "id": 9,
+            "alt": "drone",
+            "src": "/assets/img/home/DroneVista2.png"
+        },
+        {
+            "id": 10,
+            "alt": "space",
+            "src": "/assets/img/home/SpaceLens.png"
+        },
+        {
+            "id": 11,
+            "alt": "space",
+            "src": "/assets/img/home/SpaceLens1.png"
+        },
+        {
+            "id": 12,
+            "alt": "space",
+            "src": "/assets/img/home/SpaceLens2.png"
+        }
+    ]
+}

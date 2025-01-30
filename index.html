@@ -8,15 +8,363 @@
 	<title>Lookers</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css" />
-	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="icon" type="image/x-icon" href="/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
 </head>
 
 <body>
-	<header class="header" id="header"></header>
+	<header class="header" id="header">
+		<div class="header__container">        
+			<nav class="header__nav">
+			<div class='grid-background'></div>
+				<div class="header-row">
+					<a href="/src/html/index.html" class="logo">
+					<div class="logo-circle"></div>
+					<p class='logo-text'>Lookers</p>                
+					</a>
+					
+					
+					<button  class="dark-mode__btn">
+						<div class="corner-tl"></div>
+						<div class="corner-tr"></div>
+						<div class="corner-bl"></div>
+						<div class="corner-br"></div>
+						ISO:100 
+					  </button>
+	
+					<button 
+					class='headerbtn mobile-nav-btn'                 
+					>
+					<div class="corner-tl"></div>
+					<div class="corner-tr"></div>
+					<div class="corner-bl"></div>
+					<div class="corner-br"></div>
+						<span class='nav-text'>Menu</span>
+						<span class='nav-text--close'>Close</span>
+						<span class='header__plus'>+</span>
+					</button>
+				</div>
+		</nav>
+		</div>
+	</header>
+
+	<div class="overlay">
+		<div class="overlay__menu">
+			<ul class="menu__list">
+				<li id="active" class="menu__item menu__item-main">
+					<div className="corner-tl"></div>
+		  <div className="corner-tr"></div>
+		  <div className="corner-bl"></div>
+		  <div className="corner-br"></div>
+					<div class="menu__item-content"><a href="#" class="menu__link menu__link-title">Works</a></div>
+					
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">residential properties</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+					
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">commercial spaces</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">Aerial views</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+			</ul>
+			<ul class="menu__list">
+				<li  class="menu__item menu__item-main">
+					<div className="corner-tl"></div>
+		  <div className="corner-tr"></div>
+		  <div className="corner-bl"></div>
+		  <div className="corner-br"></div>
+					<div class="menu__item-content"><a href="#" class="menu__link menu__link-title">About</a></div>
+					
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">our story</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">meet the photographer</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">vision and style</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+			</ul>
+			<ul class="menu__list">
+				<li id="active" class="menu__item menu__item-main">
+					<div className="corner-tl"></div>
+		  <div className="corner-tr"></div>
+		  <div className="corner-bl"></div>
+		  <div className="corner-br"></div>
+					<div class="menu__item-content"><a href="#" class="menu__link menu__link-title">Services</a></div>
+					
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">real estate photography</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">drone photography</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">architect photography</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+			</ul>
+			<ul class="menu__list">
+				<li  class="menu__item menu__item-main">
+					<div className="corner-tl"></div>
+		  <div className="corner-tr"></div>
+		  <div className="corner-bl"></div>
+		  <div className="corner-br"></div>
+					<div class="menu__item-content"><a href="#" class="menu__link menu__link-title">Contact</a></div>
+					
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">inquire fo a shoot</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">info@lookers.com</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+				<li  class="menu__item">
+					<div class="menu__item-content">
+						<a href="#" class="menu__link menu__link-subtitle">instagram, linkedin, twitter</a>
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="1" y1="17.5" x2="5" y2="17.5" stroke="#808080"/>
+						<line y1="0.5" x2="5" y2="0.5" stroke="#808080"/>
+						<line x1="0.5" y1="2.18557e-08" x2="0.5" y2="5" stroke="#808080"/>
+						<line x1="0.5" y1="13" x2="0.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="17.5" x2="19" y2="17.5" stroke="#808080"/>
+						<line x1="18.5" y1="13" x2="18.5" y2="18" stroke="#808080"/>
+						<line x1="14" y1="0.5" x2="19" y2="0.5" stroke="#808080"/>
+						<line x1="18.5" y1="-2.18557e-08" x2="18.5" y2="5" stroke="#808080"/>
+						<path d="M4.64645 13.6464C4.45118 13.8417 4.45118 14.1583 4.64645 14.3536C4.84171 14.5488 5.15829 14.5488 5.35355 14.3536L4.64645 13.6464ZM14.5 5C14.5 4.72386 14.2761 4.5 14 4.5L9.5 4.5C9.22386 4.5 9 4.72386 9 5C9 5.27614 9.22386 5.5 9.5 5.5L13.5 5.5L13.5 9.5C13.5 9.77614 13.7239 10 14 10C14.2761 10 14.5 9.77614 14.5 9.5L14.5 5ZM5.35355 14.3536L14.3536 5.35355L13.6464 4.64645L4.64645 13.6464L5.35355 14.3536Z" fill="#808080"/>
+						</svg>
+					</div>
+				</li>
+			</ul>
+		</div>
+	
+		
+	</div>
 
 	<main class="main" id="main">
-		 
+		<section class="home__container container">
+			<div class="corner-top-left"></div>
+			<div class="corner-top-right"></div>
+			<div class="corner-bottom-left"></div>
+			<div class="corner-bottom-right"></div>
+			<div class="home-background">
+			  <ul class="upline">
+				<li class="upline__item"></li>
+				<li class="upline__item upline__item--middle"></li>
+				<li class="upline__item"></li>
+			  </ul>
+			  
+		
+		
+		
+			  <ul class="middleline">
+				<li class="middleline__item middleline__item-left "></li>
+				<li class="middleline__item middleline__item-middle"></li>
+				<li class="middleline__item middleline__item-right"></li>
+		
+			  </ul>
+			  <ul class="downline">
+				<li class="downline__item"></li>
+				<li class="downline__item downline__item--middle"></li>
+				<li class="downline__item"></li>
+			  </ul>
+			</div>
+		
+			<div class="home__content">
+			  <p class="home__text">
+				We are a creative team specializing in real estate <br />
+				photography and storytelling
+			  </p>
+		
+			  <div class="home__downpart">
+				<div class="home__lists-wrapper">
+				  <ul class="home__list">
+					<li id="bright"
+					 class="home__item"
+					 > 
+					  <span class="home__item--uppercase" >Bright space</span>
+					estate project</li>
+					<li id="arch"
+					class="home__item "
+					> 
+					  <span class="home__item--uppercase" >ArchShots</span> 
+					architecture</li>
+				  </ul>
+		
+				  <ul class="home__list home__list--right">
+				  <li id="drone"
+				   class="home__item "
+				   > 
+					<span class="home__item--uppercase" >DroneVista</span> 
+				  drone Photography</li>
+				  <li id="space"
+				  class="home__item "
+				  > 
+					<span class="home__item--uppercase" >SpaceLens</span>
+				  commercial Spaces</li>
+				  </ul>
+				</div>
+		
+				<div class="home__titlewrapper">
+				  <h2 class="home__title">L</h2>
+				  <div class="title__figure">
+					<img class="title__image" src='/assets/img/home/Union.png' alt="img">
+					<!-- <div class="title__img title__img--circleone"></div>
+					<div class="title__img title__img--circletwo"></div> -->
+				  </div>
+		
+				  <h2 class="home__title">kers</h2>
+				</div>
+			  </div>
+			</div>
+		  </section>
 	</main>
 
 	<!-- @@include('blocks/footer.html') -->

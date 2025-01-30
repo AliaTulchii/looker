@@ -1,3 +1,6 @@
+import '../../scss/main.scss';
+import gsap from 'gsap';
+
 function mobileNav() {
 	document.addEventListener("DOMContentLoaded", () => {
 		const toggleButton = document.querySelector('.mobile-nav-btn');
