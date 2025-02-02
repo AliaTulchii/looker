@@ -12,7 +12,7 @@ function mobileNav() {
 		let isOpen = false;
 
 		// Ініціалізація анімації GSAP
-		gsap.set(".menu__list .menu__item-content", { y: 95 });
+		// gsap.set(".menu__list .menu__item-content", { y: 95 });
 
 
 		const timeline = gsap.timeline({ paused: true });
@@ -25,12 +25,12 @@ function mobileNav() {
 				onStart: () => (overlay.style.visibility = 'visible'),
 			})
 
-			timeline.to(".menu__list .menu__item-content",{
-					duration: 1,
-					y: 0,
-					stagger: 0.2,
-					ease: "power4.inOut",
-				},"-=1"	)
+			// timeline.to(".menu__list .menu__item-content",{
+			// 		duration: 1,
+			// 		y: 0,
+			// 		stagger: 0.2,
+			// 		ease: "power4.inOut",
+			// 	},"-=1"	)
 
 		// Обробник натискання кнопки
 		toggleButton.addEventListener("click", () => {

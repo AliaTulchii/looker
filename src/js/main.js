@@ -15,5 +15,8 @@ mobileNav();
 import homeHover from './modules/home-hover.js';
 homeHover();
 
+// import letterAnimation from './modules/letter-animation.js';
+// letterAnimation();
 
-
+import darkLightMode from './modules/dark-light-mode.js';
+darkLightMode()
