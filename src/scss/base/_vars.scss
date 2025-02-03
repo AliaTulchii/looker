@@ -26,6 +26,7 @@
 /* Header */
 --header-bg: var(--white);
 --header-text: var(--black);
+--dark-mode: var(--black);;
 
 /* Footer */
 --footer-bg: var(--black);
@@ -50,6 +51,7 @@
 --bg-color: #0f0f0f;
 --text-color: var(--white);
 --header-text: var(--white);
+--dark-mode: var(--white);
 --line: var(--white-line);
 --header-bg: var(--black);
 --home-text: var(--white);
@@ -63,12 +65,13 @@
 }
 
 .red{
-	--bg-color: var(--accent);
---text-color: var(--white);
+	--bg-color: var(--white);
+--text-color: var(--black);
 --line: var(--black-line);
 --nav-border: var(--black);
 --header-bg: var(--white);
 --home-text: var(--black);
 --nav-text: var(--black);
 --header-text: var(--black);
+--dark-mode: var(--black);
 }

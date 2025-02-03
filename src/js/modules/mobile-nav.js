@@ -9,6 +9,7 @@ function mobileNav() {
 		const navText =document.querySelector('.nav-text');
 		const navTextClose = document.querySelector('.nav-text--close');
 		const header = document.querySelector('.header');
+		const darkModeBtn = document.getElementById('dark-mode');
 		let isOpen = false;
 
 		// Ініціалізація анімації GSAP
@@ -41,16 +42,19 @@ function mobileNav() {
 				});
 
 				body.classList.remove("overlay-active");
-				navText.style.display = "block"; 
-                navTextClose.style.display = "none";		
-				
+				navText.style.display = "block";  
+                navTextClose.style.display = "none";
+				console.log("Adding 'red' class");
+				header.classList.remove("red");
+				overlay.classList.remove("red");
 			} else {
 				timeline.play();
 				body.classList.add("overlay-active");
 				navText.style.display = "none"; 
                 navTextClose.style.display = "block"; 
-				
-				
+				darkModeBtn.style.color = "var(--dark-mode)";
+				header.classList.add("red");
+				overlay.classList.add("red");				
 			}
 			header.style.zIndex = isOpen ? "1100" : "1100";
 			isOpen = !isOpen;
